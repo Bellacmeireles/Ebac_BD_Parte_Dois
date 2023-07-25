@@ -1,0 +1,10 @@
+Módulo 26 -> aula sobre a instalação do BD PostgreSQL e Docker
+
+PostgreSQL:
+PostgreSQL é um sistema de gerenciamento de banco de dados relacional gratuito e de código aberto que foca na conformidade e extensibilidade SQL. Com mais de 30 anos de desenvolvimento ativo, o PostgreSQL é uma das ferramentas de banco de dados open-source mais amplamente utilizadas em todo o mundo.
+
++ Atualmente, é o segundo banco de dados mais utilizado, ficando atrás apenas do MySQL.
+
++ Ele inclui a maioria dos tipos de dados SQL como INTEGER, VARCHAR, TIMESTAMP, e BOOLEAN. Também suporta o armazenamento de grandes objetos binários, incluindo imagens, vídeos ou sons. Ele é confiável, pois tem uma grande rede de suporte integrada à comunidade. O PostgreSQL é um banco de dados tolerante a falhas graças ao seu registro write-ahead.
+
+- Assim como existe varios outros tipos de DBs, o PostgreSQL é um dos mais usados e é oque vai ser utilizada nesse módulo para as implementações.
