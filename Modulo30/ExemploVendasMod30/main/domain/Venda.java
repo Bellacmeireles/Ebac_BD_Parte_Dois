@@ -9,9 +9,10 @@ import java.util.Set;
 import Modulo30.ExemploVendasMod30.main.anotacao.ColunaTabela;
 import Modulo30.ExemploVendasMod30.main.anotacao.Tabela;
 import Modulo30.ExemploVendasMod30.main.anotacao.TipoChave;
+import Modulo30.ExemploVendasMod30.main.dao.Persistente;
 
 @Tabela("TB_VENDA")
-public class Venda {
+public class Venda implements Persistente {
 
     public enum Status {
 		INICIADA, CONCLUIDA, CANCELADA;
