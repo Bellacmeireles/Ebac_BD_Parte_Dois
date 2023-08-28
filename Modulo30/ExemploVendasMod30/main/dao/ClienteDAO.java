@@ -9,26 +9,27 @@ import Modulo30.ExemploVendasMod30.main.domain.Cliente;
 public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO {
 
     public ClienteDAO() {
-        super();
-    }
+		super();
+	}
 
-    @Override
-    public Class<Cliente> getTipoClasse() {
-        return Cliente.class;
-    }
+	@Override
+	public Class<Cliente> getTipoClasse() {
+		return Cliente.class;
+	}
 
-    @Override
-    public void atualiarDados(Cliente entity, Cliente entityCadastrado) {
-        entityCadastrado.setCidade(entity.getCidade());
+	@Override
+	public void atualiarDados(Cliente entity, Cliente entityCadastrado) {
+		entityCadastrado.setCidade(entity.getCidade());
 		entityCadastrado.setCpf(entity.getCpf());
 		entityCadastrado.setEnd(entity.getEnd());
 		entityCadastrado.setEstado(entity.getEstado());
 		entityCadastrado.setNome(entity.getNome());
 		entityCadastrado.setNumero(entity.getNumero());
 		entityCadastrado.setTel(entity.getTel());
-    }
+		
+	}
 
-    @Override
+	@Override
 	protected String getQueryInsercao() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO TB_CLIENTE ");

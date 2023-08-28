@@ -23,9 +23,9 @@ import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
 import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
 import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
-public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO{
-    
-    
+public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
+	
+
 	@Override
 	public Class<Venda> getTipoClasse() {
 		return Venda.class;
