@@ -17,7 +17,11 @@ public class Cliente implements Persistente {
 	@TipoChave("getCpf")
 	@ColunaTabela(dbName = "cpf", setJavaName = "setCpf")
     private Long cpf;
-    
+
+	/* tarefa mod30 */
+	@ColunaTabela(dbName = "cep", setJavaName = "setCep")
+    private Long cep;
+
 	@ColunaTabela(dbName = "tel", setJavaName = "setTel")
     private Long tel;
     
@@ -80,6 +84,14 @@ public class Cliente implements Persistente {
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	/* tarefa mod30 */
+	public Long getCep() {
+		return cep;
+	}
+	public void setCep(Long cep) {
+		this.cep = cep;
 	}
 
     

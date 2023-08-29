@@ -1,0 +1,3 @@
+# Ignore o arquivo sql
+/sql
+/postgre.sql
