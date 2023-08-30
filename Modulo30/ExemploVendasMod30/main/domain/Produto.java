@@ -16,6 +16,10 @@ public class Produto implements Persistente {
 	@TipoChave("getCodigo")
 	@ColunaTabela(dbName = "codigo", setJavaName = "setCodigo")
 	private String codigo;
+
+    /* tarefa mod30 */
+    @ColunaTabela(dbName = "fabricadoPais", setJavaName = "setFabricadoPais")
+    private String fabricadoPais;
 	
 	@ColunaTabela(dbName = "nome", setJavaName = "setNome")
 	private String nome;
@@ -67,6 +71,14 @@ public class Produto implements Persistente {
     public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
- 
+    
+    /* tarefa mod30 */
+    public String getFabricadoPais() {
+        return fabricadoPais;
+    }
+
+    public void setFabricadoPais(String fabricadoPais) {
+        this.fabricadoPais = fabricadoPais;
+    }
 
 }

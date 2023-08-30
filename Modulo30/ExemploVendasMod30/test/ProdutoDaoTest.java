@@ -19,6 +19,11 @@ import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
 import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
 import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
+/*
+ *  falta atualizar a classe de prodTest
+ *  fazer os tests parecido com o clienteDAOTeste
+ */
+
 public class ProdutoDaoTest {
 
     private IProdutoDao produtoDao;
@@ -46,7 +51,9 @@ public class ProdutoDaoTest {
 		produto.setDescricao("Produto 1");
 		produto.setNome("Produto 1");
 		produto.setValor(BigDecimal.TEN);
-		produtoDao.cadastrar(produto);
+		produto.setFabricadoPais("Made in Brasil");
+		
+		produtoDao.cadastrar(produto);	
 		return produto;
 	}
 	
