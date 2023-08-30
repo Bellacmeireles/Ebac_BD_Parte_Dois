@@ -1,31 +1,11 @@
-Tarefa mód 25 -> 19/07
+tarefa mód 30
 
-+ terminar o ExemplosVendasMod25 trazendo os implementos das classe "Produto" que tem no mód19
-+ fazer os meus passou que o professor fez, só que dessas vez passando isso para Produto
+1.1 alterar o código feito pelo professor
+1.2 add um campo novo na TB_CLIENTE e TB_PRODUTO, fazer as alterações necessárias para os tests rodarem e tudo funcionar 
 
-1- Trazer a classe Produto
-2- Criar a class ProdutoService e a Insterface IProdutoService
-3- Criar a class ProdutoDAO e a Insterfacde IProdutoDAO
-4- Criar tmb a class de BD(banco de dados) ProdutoDaoMock
-5- E por último as classes de test -> ProdutoDAOTest e ProdutoTest
+- essa parte foi executada com sucesso!
 
+2.1 a segunda tarefa (que não era pra ter tentar, não tinha problema se não conseguisse) era criar uma tb_estoque e associar o produto ao estoque. pra saber a quantidade que ainda tem.
++ toda vez que ele cadastrar um prod novo, vai ter que cadastrar no estoque a quantidadeque entrou e toda vez q tiver uma venda, vai em estoque e da baixa no prod que vendeu;
 
-Tarefa mód 25 -> 20/07 / Concluida
-
-+ Trouxe a classe Produto para ser implementada, criei as duas formas de testes, tanto no service como no Dao para serm testadas
-+ Implementei as classe de regra de negócio -> ProdutoService e IProdutoService
-+ Implementei também as classes de DAO para fazer (simular) o acesso do Banco de Dados
-
-- Os dois testes foram concluidos com sucesso e não apresentarem erros!
-
-/////////////////////////////////////////////////////////////////////////////
-
-Acompanhameto dia anterior 21/08:
-+ crie a classe de conexão -> jdbc/ConnectionFactory.java
-
-+ implementei as alterações feitas pelo prof na aula 1, alterações na domain para o bd, add de ProdutoQuantidade e Venda, os dois tmb para receber a conexão com o bd.
-
-+ ja na aula 1.2 ja comecei fazendo alterações no IClienteDAO(adicionei o ,Long depois do Cliente) e no  IGenericDAO, onde no method "consultar" deixei comentado o /* throws MaisDeUmRegistroException, TableException, DAOException*/ pois ainda tenho as classes deles para criar
-
-+ isso ocasionou erro no ClienteDAO(que esta todo comentado para não ficar vermelho) e GenericDAO(que esta com muitos erros) // na pasta de test(test/dao(onde estao os mocks)) e services tmb esta com erro(mas continuar ignorando até chegar neles na aula)
-
+- ainda não foi executada
