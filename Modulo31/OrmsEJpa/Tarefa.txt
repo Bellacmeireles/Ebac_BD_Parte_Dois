@@ -1,0 +1,8 @@
+Módulo 31 -> ORMs e JPA
+- Tarefa sobre pesquisar mais sobre JPA
+
++ Java Persistence API (ou simplesmente JPA) é uma API padrão da linguagem Java que descreve uma interface comum para frameworks de persistência de dados. A JPA define um meio de mapeamento objeto-relacional para objetos Java simples e comuns (POJOs), denominados beans de entidade. Diversos frameworks de mapeamento objeto/relacional como o Hibernate implementam a JPA. Também gerencia o desenvolvimento de entidades do Modelo Relacional usando a plataforma nativa Java SE e Java EE.
+
+Originou-se num projeto comum entre os desenvolvedores para se criar o padrão. Fortemente baseado nas ideias trazidas pelo Hibernate, tanto que o líder da primeira versão dessa especificação é o criador do framework.
+
+Ou seja, é utilizado principalmente para conexão e acesso a banco de dados relacionais.
