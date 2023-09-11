@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 
     <persistence-unit name="ExemploJPA">
 
-        <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+        <!--  <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <!-- <class>br.com.rpires.domain.Cliente</class> -->
+        <!-- <class>src.main.domain.Curso</class>
+        <class>src.resources.META-INF.persistence</class> -->
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/mod32" />
+            <property name="javax.persistence.jdbc.url"
+                value="jdbc:postgresql://localhost:5432/mod32" />
             <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="5678" />
             <!-- DB Password -->
 
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
             <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <!-- create / create-drop / update -->
@@ -30,16 +32,6 @@
             <property name="hibernate.format_sql" value="true" />
             <!-- Show SQL formatted -->
         </properties>
-
-        <!-- de acordo com o chatgpt o elemento <dependency> dentro do <persistence-unit>, o qual não deve estar presente no arquivo persistence.xml. pois essa configuracao pertence ao pom.xml se você estiver usando o Maven, mas eu estava enfrentando problemas pois antes deu colocar o dependency
-        ele nao estava importando o "javax" e agora quando eu coloco ele, os imports voltam a funcionar.
-        voltei ele comentado agora de novo, testei pra ver se os imports estavam funcionando e por enquanto ta rodando -->
-        <!-- <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.1.7.Final</version>
-        </dependency> -->
 
     </persistence-unit>
 
