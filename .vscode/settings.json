@@ -12,5 +12,6 @@
             "c:\\Users\\bella\\OneDrive\\Documentos\\hibernate-release-5.6.2.Final\\hibernate-release-5.6.2.Final\\lib\\required\\hibernate-core-5.6.2.Final.jar"
         ]
     },
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.import.maven.enabled": true
 }
