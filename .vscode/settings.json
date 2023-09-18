@@ -6,8 +6,10 @@
         "c:\\Users\\bella\\OneDrive\\Documentos\\junit-4.13.2.jar"
     ],
     "java.project.sourcePaths": [
-        "..\\..\\..\\..\\..\\..\\..\\..\\..\\OneDrive\\Documentos\\Ebac BD parte dois\\Modulo30",
-        "..\\..\\..\\..\\..\\..\\..\\..\\..\\OneDrive\\Documentos\\Ebac BD parte dois\\Modulo31",
-        "..\\..\\..\\..\\..\\..\\..\\..\\..\\OneDrive\\Documentos\\Ebac BD parte dois\\Testando"
+        "Testando",
+        "Modulo31",
+        "Modulo30",
+        "Modulo26",
+        "Modulo33/demo"
     ]
 }
