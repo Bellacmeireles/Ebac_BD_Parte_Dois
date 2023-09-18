@@ -52,6 +52,8 @@ public class ProdutoDaoTest {
 		produto.setNome("Produto 1");
 		produto.setValor(BigDecimal.TEN);
 		produto.setFabricadoPais("Made in Brasil");
+		produto.setPacote("S");
+		produto.setEstoque(10);
 		
 		produtoDao.cadastrar(produto);	
 		return produto;

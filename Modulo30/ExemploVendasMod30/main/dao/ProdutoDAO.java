@@ -24,14 +24,16 @@ public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoD
         entityCadastrado.setNome(entity.getNome());
         entityCadastrado.setValor(entity.getValor());
         entityCadastrado.setFabricadoPais(entity.getFabricadoPais());
+        entityCadastrado.setPacote(entity.getPacote());
+		entityCadastrado.setEstoque(entity.getEstoque());
     }
 
     @Override
     protected String getQueryInsercao() {
         StringBuilder sb = new StringBuilder();
         sb.append("INSERT INTO TB_PRODUTO ");
-        sb.append("(ID, CODIGO, NOME, DESCRICAO, VALOR, FABRICADOPAIS)");
-        sb.append("VALUES (nextval('sq_produto'),?,?,?,?,?)");
+        sb.append("(ID, CODIGO, NOME, DESCRICAO, VALOR, FABRICADOPAIS, PACOTE, ESTOQUE)");
+        sb.append("VALUES (nextval('sq_produto'),?,?,?,?,?,?,?)");
         return sb.toString();
     }
 
@@ -42,6 +44,8 @@ public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoD
         stmInsert.setString(3, entity.getDescricao());
         stmInsert.setBigDecimal(4, entity.getValor());
         stmInsert.setString(5, entity.getFabricadoPais());
+        stmInsert.setString(6, entity.getPacote());
+		stmInsert.setInt(7, entity.getEstoque());
     }
 
     @Override
@@ -61,7 +65,9 @@ public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoD
         sb.append("SET NOME = ?,");
         sb.append("DESCRICAO = ?,");
         sb.append("VALOR = ?,");
-        sb.append("FABRICADOPAIS = ?");
+        sb.append("FABRICADOPAIS = ?,");
+        sb.append("PACOTE = ?,");
+		sb.append("ESTOQUE = ?");
         sb.append(" WHERE CODIGO = ?");
         return sb.toString();
     }
@@ -72,7 +78,9 @@ public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoD
         stmUpdate.setString(2, entity.getDescricao());
         stmUpdate.setBigDecimal(3, entity.getValor());
         stmUpdate.setString(4, entity.getFabricadoPais());
-        stmUpdate.setString(5, entity.getCodigo());
+        stmUpdate.setString(5, entity.getPacote());
+		stmUpdate.setInt(6, entity.getEstoque());
+        stmUpdate.setString(7, entity.getCodigo());
     }
 
     @Override

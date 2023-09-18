@@ -29,7 +29,29 @@ public class Produto implements Persistente {
 	
 	@ColunaTabela(dbName = "valor", setJavaName = "setValor")
 	private BigDecimal valor;
- 
+
+    @ColunaTabela(dbName = "pacote", setJavaName = "setPacote")
+    private String pacote;
+
+    @ColunaTabela(dbName = "estoque", setJavaName = "setEstoque")
+    private Integer estoque;
+
+	public Integer getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(Integer estoque) {
+		this.estoque = estoque;
+	}
+    
+    public String getPacote() {
+		return pacote;
+	}
+
+	public void setPacote(String pacote) {
+		this.pacote = pacote;
+	}
+
     @Override
     public Long getId() {
         return id;
