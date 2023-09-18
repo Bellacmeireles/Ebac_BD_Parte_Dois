@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.main.dao.generics;
+package ExemploVendasMod30.main.dao.generics;
 
 import java.util.HashMap;
 import java.util.Map;

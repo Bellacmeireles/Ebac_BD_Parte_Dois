@@ -1,4 +1,4 @@
-package Testando.main.domain;
+package main.domain;
 
 public class Produto {
    
@@ -24,6 +24,10 @@ public class Produto {
     }
     public void setNomeP(String nomeP) {
         this.nomeP = nomeP;
+    }
+    public void setIdProd(String string) {
+    }
+    public void setNomeProd(String string) {
     }
     
 }

@@ -1,16 +1,16 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Modulo30.ExemploVendasMod30.main.dao.IClienteDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
-import Modulo30.ExemploVendasMod30.main.services.ClienteService;
-import Modulo30.ExemploVendasMod30.main.services.IClienteService;
-import Modulo30.ExemploVendasMod30.test.dao.ClienteDaoMock;
+import ExemploVendasMod30.main.dao.IClienteDAO;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.services.ClienteService;
+import ExemploVendasMod30.main.services.IClienteService;
+import ExemploVendasMod30.test.dao.ClienteDaoMock;
 
 public class ClienteServiceTest {
 

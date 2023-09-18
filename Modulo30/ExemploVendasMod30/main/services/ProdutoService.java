@@ -1,8 +1,8 @@
-package Modulo30.ExemploVendasMod30.main.services;
+package ExemploVendasMod30.main.services;
 
-import Modulo30.ExemploVendasMod30.main.dao.IProdutoDao;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
-import Modulo30.ExemploVendasMod30.main.services.generic.GenericService;
+import ExemploVendasMod30.main.dao.IProdutoDao;
+import ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.services.generic.GenericService;
 
 public class ProdutoService extends GenericService<Produto, String> implements IProdutoService {
 

@@ -1,8 +1,8 @@
-package Testando.main.dao;
+package main.dao;
 
 import java.util.List;
 
-import Testando.main.domain.Produto;
+import main.domain.Produto;
 
 public interface IProdutoDAO {
 

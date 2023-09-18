@@ -1,10 +1,10 @@
-package Modulo30.ExemploVendasMod30.test.dao;
+package ExemploVendasMod30.test.dao;
 
 import java.util.Collection;
 
-import Modulo30.ExemploVendasMod30.main.dao.IClienteDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.IClienteDAO;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
 public class ClienteDaoMock implements IClienteDAO {
 

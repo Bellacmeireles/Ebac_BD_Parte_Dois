@@ -1,4 +1,4 @@
-package Testando.test;
+package test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,9 +9,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import Testando.main.dao.ClienteDAO;
-import Testando.main.dao.IClienteDAO;
-import Testando.main.domain.Cliente;
+import main.dao.ClienteDAO;
+import main.dao.IClienteDAO;
+import main.domain.Cliente;
 
 public class ClienteTestNovo {
 

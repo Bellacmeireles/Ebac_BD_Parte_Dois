@@ -1,7 +1,7 @@
-package Modulo30.ExemploVendasMod30.main.dao;
+package ExemploVendasMod30.main.dao;
 
-import Modulo30.ExemploVendasMod30.main.dao.generics.IGenericDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.dao.generics.IGenericDAO;
+import ExemploVendasMod30.main.domain.Produto;
 
 public interface IProdutoDao extends IGenericDAO<Produto, String> {
 

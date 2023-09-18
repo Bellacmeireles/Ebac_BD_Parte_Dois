@@ -1,12 +1,12 @@
-package Modulo30.ExemploVendasMod30.test.dao;
+package ExemploVendasMod30.test.dao;
 
 
 
 import java.util.Collection;
 
-import Modulo30.ExemploVendasMod30.main.dao.IProdutoDao;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.IProdutoDao;
+import ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
 public class ProdutoDaoMock implements IProdutoDao {
 

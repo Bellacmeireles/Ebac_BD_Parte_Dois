@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.main.dao.generics;
+package ExemploVendasMod30.main.dao.generics;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -14,17 +14,18 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import ExemploVendasMod30.main.anotacao.ColunaTabela;
+import ExemploVendasMod30.main.anotacao.Tabela;
+import ExemploVendasMod30.main.anotacao.TipoChave;
+import ExemploVendasMod30.main.dao.Persistente;
+import ExemploVendasMod30.main.dao.generics.jdbc.ConnectionFactory;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.exceptions.TipoElementoNaoConhecidoException;
 
-import Modulo30.ExemploVendasMod30.main.dao.generics.jdbc.ConnectionFactory;
-import Modulo30.ExemploVendasMod30.main.anotacao.ColunaTabela;
-import Modulo30.ExemploVendasMod30.main.anotacao.Tabela;
-import Modulo30.ExemploVendasMod30.main.anotacao.TipoChave;
-import Modulo30.ExemploVendasMod30.main.dao.Persistente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoElementoNaoConhecidoException;
+
 
 /**
  * @author bellacmeireles

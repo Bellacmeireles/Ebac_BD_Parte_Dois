@@ -1,4 +1,4 @@
-package Testando.main.dao;
+package main.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,12 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Testando.main.domain.Cliente;
-import Testando.main.jdbc.Conexao;
-
-
-
-
+import main.domain.Cliente;
+import main.jdbc.Conexao;
 public class ClienteDAO implements IClienteDAO {
 	@Override
     public Integer cadastrar(Cliente cliente) throws Exception {

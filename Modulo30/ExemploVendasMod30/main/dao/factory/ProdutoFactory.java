@@ -1,9 +1,9 @@
-package Modulo30.ExemploVendasMod30.main.dao.factory;
+package ExemploVendasMod30.main.dao.factory;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.domain.Produto;
 
 public class ProdutoFactory {
     public static Produto convert(ResultSet rs) throws SQLException {

@@ -1,11 +1,11 @@
-package Modulo30.ExemploVendasMod30.main.dao.factory;
+package ExemploVendasMod30.main.dao.factory;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.domain.Venda;
-import Modulo30.ExemploVendasMod30.main.domain.Venda.Status;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.domain.Venda;
+import ExemploVendasMod30.main.domain.Venda.Status;
 
 public class VendaFactory {
     public static Venda convert(ResultSet rs) throws SQLException {

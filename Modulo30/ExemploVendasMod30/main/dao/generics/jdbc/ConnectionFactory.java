@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.main.dao.generics.jdbc;
+package ExemploVendasMod30.main.dao.generics.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,8 +1,8 @@
-package Modulo30.ExemploVendasMod30.main.services;
+package ExemploVendasMod30.main.services;
 
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.services.generic.IGenericService;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.services.generic.IGenericService;
 
 public interface IClienteService extends IGenericService<Cliente, Long> {
 

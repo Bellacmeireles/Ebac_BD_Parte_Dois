@@ -1,4 +1,4 @@
-package Testando.main.dao;
+package main.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Testando.main.domain.Produto;
-import Testando.main.jdbc.Conexao;
+import main.domain.Produto;
+import main.jdbc.Conexao;
 
 public class ProdutoDAO implements IProdutoDAO {
 

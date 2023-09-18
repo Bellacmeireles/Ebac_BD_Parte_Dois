@@ -1,11 +1,11 @@
-package Modulo30.ExemploVendasMod30.main.services;
+package ExemploVendasMod30.main.services;
 
-import Modulo30.ExemploVendasMod30.main.dao.IClienteDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.services.generic.GenericService;
+import ExemploVendasMod30.main.dao.IClienteDAO;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.services.generic.GenericService;
 
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
 

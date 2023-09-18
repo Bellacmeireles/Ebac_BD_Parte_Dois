@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -8,13 +8,15 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
-import Modulo30.ExemploVendasMod30.main.dao.ClienteDAO;
-import Modulo30.ExemploVendasMod30.main.dao.IClienteDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.ClienteDAO;
+import ExemploVendasMod30.main.dao.IClienteDAO;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+
+
 
 
 public class ClienteDAOTest {

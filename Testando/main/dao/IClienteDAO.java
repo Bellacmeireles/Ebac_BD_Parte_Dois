@@ -1,7 +1,7 @@
-package Testando.main.dao;
+package main.dao;
 import java.util.List;
 
-import Testando.main.domain.Cliente;
+import main.domain.Cliente;
 
 public interface IClienteDAO {
 

@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.main.anotacao;
+package ExemploVendasMod30.main.anotacao;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

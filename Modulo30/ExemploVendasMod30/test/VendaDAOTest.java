@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -18,21 +18,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import Modulo30.ExemploVendasMod30.main.dao.ClienteDAO;
-import Modulo30.ExemploVendasMod30.main.dao.IClienteDAO;
-import Modulo30.ExemploVendasMod30.main.dao.IProdutoDao;
-import Modulo30.ExemploVendasMod30.main.dao.IVendaDAO;
-import Modulo30.ExemploVendasMod30.main.dao.ProdutoDAO;
-import Modulo30.ExemploVendasMod30.main.dao.VendaDAO;
-import Modulo30.ExemploVendasMod30.main.dao.generics.jdbc.ConnectionFactory;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
-import Modulo30.ExemploVendasMod30.main.domain.Venda;
-import Modulo30.ExemploVendasMod30.main.domain.Venda.Status;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.ClienteDAO;
+import ExemploVendasMod30.main.dao.IClienteDAO;
+import ExemploVendasMod30.main.dao.IProdutoDao;
+import ExemploVendasMod30.main.dao.IVendaDAO;
+import ExemploVendasMod30.main.dao.ProdutoDAO;
+import ExemploVendasMod30.main.dao.VendaDAO;
+import ExemploVendasMod30.main.dao.generics.jdbc.ConnectionFactory;
+import ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.domain.Venda;
+import ExemploVendasMod30.main.domain.Venda.Status;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
 public class VendaDAOTest {
 

@@ -1,17 +1,14 @@
 {
-    "java.project.referencedLibraries": {
-        "include": [
-            "lib/**/*.jar",
-            "c:\\Users\\bella\\Downloads\\postgresql-42.6.0.jar",
-            "c:\\Users\\bella\\OneDrive\\Documentos\\hamcrest-core-1.3.jar",
-            "c:\\Users\\bella\\OneDrive\\Documentos\\junit-4.13.2.jar"
-        ],
-        "exclude": [
-            "c:\\Users\\bella\\OneDrive\\Documentos\\hibernate-release-5.6.2.Final\\hibernate-release-5.6.2.Final\\lib\\required\\FastInfoset-1.2.15.jar",
-            "c:\\Users\\bella\\OneDrive\\Documentos\\hibernate-release-5.6.2.Final\\hibernate-release-5.6.2.Final\\lib\\required\\hibernate-commons-annotations-5.1.2.Final.jar",
-            "c:\\Users\\bella\\OneDrive\\Documentos\\hibernate-release-5.6.2.Final\\hibernate-release-5.6.2.Final\\lib\\required\\hibernate-core-5.6.2.Final.jar"
-        ]
-    },
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "java.import.maven.enabled": true
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\bella\\Downloads\\postgresql-42.6.0.jar",
+        "c:\\Users\\bella\\OneDrive\\Documentos\\hamcrest-core-1.3.jar",
+        "c:\\Users\\bella\\OneDrive\\Documentos\\junit-4.13.2.jar"
+    ],
+    "java.project.sourcePaths": [
+        "Modulo31",
+        "Modulo30",
+        "Modulo29",
+        "Testando"
+    ]
 }

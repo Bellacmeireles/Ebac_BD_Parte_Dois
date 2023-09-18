@@ -1,11 +1,11 @@
-package Modulo30.ExemploVendasMod30.main.services.generic;
+package ExemploVendasMod30.main.services.generic;
 
 import java.io.Serializable;
 import java.util.Collection;
 
-import Modulo30.ExemploVendasMod30.main.dao.Persistente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.Persistente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
 public interface IGenericService <T extends Persistente, E extends Serializable> {
     

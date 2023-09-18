@@ -1,9 +1,9 @@
-package Modulo30.ExemploVendasMod30.main.domain;
+package ExemploVendasMod30.main.domain;
 
 import java.math.BigDecimal;
 
-import Modulo30.ExemploVendasMod30.main.anotacao.ColunaTabela;
-import Modulo30.ExemploVendasMod30.main.anotacao.Tabela;
+import ExemploVendasMod30.main.anotacao.ColunaTabela;
+import ExemploVendasMod30.main.anotacao.Tabela;
 
 @Tabela("TB_PRODUTO_QUANTIDADE")
 public class ProdutoQuantidade {

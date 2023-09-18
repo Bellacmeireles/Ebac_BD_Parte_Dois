@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -11,13 +11,13 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
-import Modulo30.ExemploVendasMod30.main.dao.IProdutoDao;
-import Modulo30.ExemploVendasMod30.main.dao.ProdutoDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.IProdutoDao;
+import ExemploVendasMod30.main.dao.ProdutoDAO;
+import ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
 
 /*
  *  falta atualizar a classe de prodTest

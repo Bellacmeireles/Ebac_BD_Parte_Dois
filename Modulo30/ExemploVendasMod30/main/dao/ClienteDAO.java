@@ -1,10 +1,10 @@
-package Modulo30.ExemploVendasMod30.main.dao;
+package ExemploVendasMod30.main.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import Modulo30.ExemploVendasMod30.main.dao.generics.GenericDAO;
-import Modulo30.ExemploVendasMod30.main.domain.Cliente;
+import ExemploVendasMod30.main.dao.generics.GenericDAO;
+import ExemploVendasMod30.main.domain.Cliente;
 
 public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO {
 

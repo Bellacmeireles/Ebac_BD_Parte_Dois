@@ -1,4 +1,4 @@
-package Testando.main.domain;
+package main.domain;
 
 public class Cliente {
     

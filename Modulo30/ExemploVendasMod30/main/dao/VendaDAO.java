@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.main.dao;
+package ExemploVendasMod30.main.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,16 +12,18 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import Modulo30.ExemploVendasMod30.main.dao.factory.ProdutoQuantidadeFactory;
-import Modulo30.ExemploVendasMod30.main.dao.factory.VendaFactory;
-import Modulo30.ExemploVendasMod30.main.dao.generics.GenericDAO;
-import Modulo30.ExemploVendasMod30.main.domain.ProdutoQuantidade;
-import Modulo30.ExemploVendasMod30.main.domain.Venda;
-import Modulo30.ExemploVendasMod30.main.domain.Venda.Status;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.factory.ProdutoQuantidadeFactory;
+import ExemploVendasMod30.main.dao.factory.VendaFactory;
+import ExemploVendasMod30.main.dao.generics.GenericDAO;
+import ExemploVendasMod30.main.domain.ProdutoQuantidade;
+import ExemploVendasMod30.main.domain.Venda;
+import ExemploVendasMod30.main.domain.Venda.Status;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+
+
 
 public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
 	

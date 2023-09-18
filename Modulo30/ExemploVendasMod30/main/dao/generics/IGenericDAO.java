@@ -1,13 +1,15 @@
-package Modulo30.ExemploVendasMod30.main.dao.generics;
+package ExemploVendasMod30.main.dao.generics;
 
 import java.io.Serializable;
 import java.util.Collection;
 
-import Modulo30.ExemploVendasMod30.main.dao.Persistente;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TableException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.dao.Persistente;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.MaisDeUmRegistroException;
+import ExemploVendasMod30.main.exceptions.TableException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+
+
 
 /**
  * Interface genérica para métodos de CRUD(Create, Read, Update and Delete)

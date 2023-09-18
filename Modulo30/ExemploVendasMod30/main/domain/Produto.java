@@ -1,11 +1,11 @@
-package Modulo30.ExemploVendasMod30.main.domain;
+package ExemploVendasMod30.main.domain;
 
 import java.math.BigDecimal;
 
-import Modulo30.ExemploVendasMod30.main.anotacao.ColunaTabela;
-import Modulo30.ExemploVendasMod30.main.anotacao.Tabela;
-import Modulo30.ExemploVendasMod30.main.anotacao.TipoChave;
-import Modulo30.ExemploVendasMod30.main.dao.Persistente;
+import ExemploVendasMod30.main.anotacao.ColunaTabela;
+import ExemploVendasMod30.main.anotacao.Tabela;
+import ExemploVendasMod30.main.anotacao.TipoChave;
+import ExemploVendasMod30.main.dao.Persistente;
 
 @Tabela("TB_PRODUTO")
 public class Produto implements Persistente {

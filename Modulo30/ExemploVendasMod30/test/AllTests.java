@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

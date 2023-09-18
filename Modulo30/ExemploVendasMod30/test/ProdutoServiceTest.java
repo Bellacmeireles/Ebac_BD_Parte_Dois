@@ -1,4 +1,4 @@
-package Modulo30.ExemploVendasMod30.test;
+package ExemploVendasMod30.test;
 
 import java.math.BigDecimal;
 
@@ -6,13 +6,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Modulo30.ExemploVendasMod30.main.dao.IProdutoDao;
-import Modulo30.ExemploVendasMod30.main.domain.Produto;
-import Modulo30.ExemploVendasMod30.main.exceptions.DAOException;
-import Modulo30.ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
-import Modulo30.ExemploVendasMod30.main.services.IProdutoService;
-import Modulo30.ExemploVendasMod30.main.services.ProdutoService;
-import Modulo30.ExemploVendasMod30.test.dao.ProdutoDaoMock;
+import ExemploVendasMod30.main.dao.IProdutoDao;
+import ExemploVendasMod30.main.domain.Produto;
+import ExemploVendasMod30.main.exceptions.DAOException;
+import ExemploVendasMod30.main.exceptions.TipoChaveNaoEncontradaException;
+import ExemploVendasMod30.main.services.IProdutoService;
+import ExemploVendasMod30.main.services.ProdutoService;
+import ExemploVendasMod30.test.dao.ProdutoDaoMock;
 
 
 
