@@ -10,81 +10,99 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "TB_MATRICULA")
 public class Matricula {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "matri_seq")
-    @SequenceGenerator(name = "matri_seq", sequenceName = "seq_matri", initialValue = 1, allocationSize = 1)
-    private Long id;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="matri_seq")
+	@SequenceGenerator(name="matri_seq", sequenceName="sq_matricula", initialValue = 1, allocationSize = 1)
+	private Long id;
+	
+	@Column(name = "CODIGO", length = 10, nullable = false, unique = true)
+	private String codigo;
+	
+	@Column(name = "DATA_MATRICULA", nullable = false)
+	private Instant dataMatricula;
+	
+	@Column(name = "valor", nullable = false)
+	private Double valor;
+	
+	@Column(name = "status", nullable = false)
+	private String status;
+	
+	@ManyToOne
+	@JoinColumn(name = "id_curso_fk", 
+		foreignKey = @ForeignKey(name = "fk_curso_matricula"), 
+		referencedColumnName = "id", nullable = false
+	)
+	private Curso curso;
+	
+	@OneToOne
+	@JoinColumn(name = "id_aluno_fk", 
+		foreignKey = @ForeignKey(name = "fk_aluno_matricula"), 
+		referencedColumnName = "id", nullable = false
+	)	
+	private Aluno aluno;
+	
+	public Long getId() {
+		return id;
+	}
 
-    @Column(name = "CODIGO", length = 10, nullable = false, unique = true)
-    private String codigo;
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    @Column(name = "DATA_MATRICULA", nullable = false)
-    private Instant dataMatricula;
+	public String getCodigo() {
+		return codigo;
+	}
 
-    @Column(name = "VALOR", nullable = false)
-    private Double valor;
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
 
-    @Column(name = "STATUS", nullable = false)
-    private String status;
+	public Instant getDataMatricula() {
+		return dataMatricula;
+	}
 
-    @ManyToOne
-    @JoinColumn(name = "id_curso_fk", foreignKey = @ForeignKey(name = "fk_curso_matricula"),
-    referencedColumnName = "id", nullable = false)
-    private Curso curso;
+	public void setDataMatricula(Instant dataMatricula) {
+		this.dataMatricula = dataMatricula;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public Double getValor() {
+		return valor;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
 
-    public String getCodigo() {
-        return codigo;
-    }
+	public String getStatus() {
+		return status;
+	}
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
-    public Instant getDataMatricula() {
-        return dataMatricula;
-    }
+	public Curso getCurso() {
+		return curso;
+	}
 
-    public void setDataMatricula(Instant dataMatricula) {
-        this.dataMatricula = dataMatricula;
-    }
+	public void setCurso(Curso curso) {
+		this.curso = curso;
+	}
 
-    public Double getValor() {
-        return valor;
-    }
+	public Aluno getAluno() {
+		return aluno;
+	}
 
-    public void setValor(Double valor) {
-        this.valor = valor;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Curso getCurso() {
-        return curso;
-    }
-
-    public void setCurso(Curso curso) {
-        this.curso = curso;
-    }
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+	
 
 }
