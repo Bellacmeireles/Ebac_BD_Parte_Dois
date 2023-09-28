@@ -1,4 +1,4 @@
-package com.example.dao.jpa;
+package com.example.domain.jpa;
 
 
 
