@@ -28,11 +28,11 @@ services:
     image: mysql/mysql-server:latest
     environment:
       MYSQL_ROOT_PASSWORD: "admin"
-      MYSQL_DATABASE: 'vendas_online'
+      MYSQL_DATABASE: 'mod_36_mysql'
       MYSQL_USER: 'admin'
-      MYSQL_PASSWORD: 'admin'
+      MYSQL_PASSWORD: '5678'
     ports:
-      - "3307:3306"
+      - "3306:3306"
 
 networks:
   postgres-ebac-network:
