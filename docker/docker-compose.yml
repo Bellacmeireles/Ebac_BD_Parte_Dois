@@ -32,7 +32,7 @@ services:
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: '5678'
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
 networks:
   postgres-ebac-network:
