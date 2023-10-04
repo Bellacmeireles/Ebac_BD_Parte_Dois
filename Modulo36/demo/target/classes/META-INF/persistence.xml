@@ -80,13 +80,15 @@
 		
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>com.example</class>
+        <class>com.example.domain.jpa.ClienteJpa2</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
 		
 		<properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mod_36_mysql" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="admin" /> <!-- DB User -->
-            <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
+            <property name="javax.persistence.jdbc.password" value="5678" /> <!-- DB Password -->
 
 	    	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/> <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
