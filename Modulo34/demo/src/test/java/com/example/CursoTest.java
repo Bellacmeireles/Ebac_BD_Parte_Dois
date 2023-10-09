@@ -19,8 +19,8 @@ public class CursoTest {
 	@Test
 	public void cadastrar() {
 		Curso curso = new Curso();
-		curso.setCodigo("A1");
-		curso.setDescricao("CURSO TESTE - Hibernate OGM");
+		curso.setCodigo("A2");
+		curso.setDescricao("CURSO TESTE - Hibernate OGM - ModMain");
 		curso.setNome("Curso de Java Backend");
 		curso = cursoDao.cadastrar(curso);
 		

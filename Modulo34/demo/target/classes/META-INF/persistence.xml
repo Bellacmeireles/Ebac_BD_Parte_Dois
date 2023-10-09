@@ -6,7 +6,7 @@
 		
 		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
 		
-		<!-- <class>java.com.example.domain.Curso</class> -->
+		<class>com.example.domain.Curso</class>
 		
 		
 		<properties>
