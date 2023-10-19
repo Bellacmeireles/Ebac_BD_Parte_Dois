@@ -66,6 +66,12 @@
       <version>1.2</version> <!-- Use a versão adequada ao seu projeto -->
     </dependency>
 
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
 
   </dependencies>
 
@@ -73,6 +79,10 @@
     <repository>
       <id>JBoss Repository</id>
       <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>Jstl</id>
+      <url>http://java.sun.com/jsp/jstl/core</url>
     </repository>
     <repository>
       <id>prime-repo</id>

@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
 <head>
     <style>
         th, td {
@@ -22,68 +22,128 @@
     </style>
 </head>
 <body>
-    <div>
-        <h3>Clientes cadastrados</h3>
-        <table>
-            <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Telefone</th>
-                <th>Email</th>
-                <th>Editar</th>
-                <th>Excluir</th>
-            </tr>
-            <c:forEach items="${clienteController.clientes}" var="customer">
-                <tr>
-                    <td>${customer.id}</td>
-                    <td>${customer.nome}</td>
-                    <td>${customer.tel}</td>
-                    <td>${customer.email}</td>
-                    <td>
-                        <form action="${pageContext.request.contextPath}/editCustomer" method="post">
-                            <input type="hidden" name="customerId" value="${customer.id}">
-                            <input type="submit" value="Editar">
-                        </form>
-                    </td>
-                    <td>
-                        <form action="${pageContext.request.contextPath}/deleteCustomer" method="post">
-                            <input type="hidden" name="customerId" value="${customer.id}">
-                            <input type="submit" value="Excluir">
-                        </form>
-                    </td>
-                </tr>
-            </c:forEach>
-        </table>
+    <h3>Clientes cadastrados</h3>
+    <div class="ui-g">
+        <div class="ui-g-2"></div>
+        <div class="ui-g-8">
+            <form id="customers">
+                <!-- dataTable -->
+                <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                    <tr>
+                        <td>${customer.id}</td>
+                        <td>${customer.nome}</td>
+                        <td>${customer.tel}</td>
+                        <td>${customer.email}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/editCustomer" method="post">
+                                <input type="hidden" name="customerId" value="${customer.id}">
+                                <input type="submit" value="Editar">
+                            </form>
+                            <form action="${pageContext.request.contextPath}/deleteCustomer" method="post">
+                                <input type="hidden" name="customerId" value="${customer.id}">
+                                <input type="submit" value="Excluir">
+                            </form>
+                        </td>
+                        <%-- <td>
+                            <form action="${pageContext.request.contextPath}/deleteCustomer" method="post">
+                                <input type="hidden" name="customerId" value="${customer.id}">
+                                <input type="submit" value="Excluir">
+                            </form>
+                        </td> --%>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ui-g-2"></div>
     </div>
-    <div>
-        <h3>Criar novo cliente</h3>
-        <form action="${pageContext.request.contextPath}/addCustomer" method="post">
-            <label for="Nome">Nome</label>
-            <input type="text" id="Nome" name="customerName" required>
-            <br>
-            <label for="cpf">CPF</label>
-            <input type="text" id="cpf" name="customerCPF" required>
-            <br>
-            <label for="tel">Telefone</label>
-            <input type="text" id="tel" name="customerPhone" required>
-            <br>
-            <label for="email">E-Mail</label>
-            <input type="text" id="email" name="customerEmail" required>
-            <br>
-            <label for="end">Endereço</label>
-            <input type="text" id="end" name="customerAddress" required>
-            <br>
-            <label for="numero">Numero</label>
-            <input type="text" id="numero" name="customerNumber" required>
-            <br>
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="customerCity" required>
-            <br>
-            <label for="estado">Estado</label>
-            <input type="text" id="estado" name="customerState" required>
-            <br>
-            <input type="submit" value="Cadastrar">
-        </form>
+
+    <h3>Criar novo cliente</h3>
+    <div class="ui-g">
+        <div class="ui-g-2"></div>
+        <div class="ui-g-8">
+            <form id="add">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Nome">Nome</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Nome" name="customerName" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cpf">CPF</label>
+                        </td>
+                        <td>
+                            <input type="text" id="cpf" name="customerCPF" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tel">Telefone</label>
+                        </td>
+                        <td>
+                            <input type="text" id="tel" name="customerPhone" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-Mail</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="customerEmail" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="end">Endereço</label>
+                        </td>
+                        <td>
+                            <input type="text" id="end" name="customerAddress" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="numero">Numero</label>
+                        </td>
+                        <td>
+                            <input type="text" id="numero" name="customerNumber" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade">Cidade</label>
+                        </td>
+                        <td>
+                            <input type="text" id="cidade" name="customerCity" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estado">Estado</label>
+                        </td>
+                        <td>
+                            <input type="text" id="estado" name="customerState" required>
+                        </td>
+                    </tr>
+                </table>
+                <form  action="${clienteController.add}" method="post">
+                    <input type="submit" value="Cadastrar">
+				</form>
+            </form>
+        </div>
+        <div class="ui-g-2"></div>
     </div>
 </body>
 </html>

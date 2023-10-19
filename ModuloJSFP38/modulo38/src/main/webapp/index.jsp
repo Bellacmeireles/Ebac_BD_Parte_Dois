@@ -7,7 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-    <h2>Ol&Aacute PrimeFaces38</h2>
-    <p:outputLabel value="Olá Prime Faces" />
+    <h2>Olá PrimeFaces38</h2>
+    <form action="${pageContext.request.contextPath}/cliente/list.jsp" method="post">
+        <input type="submit" value="Ir para cadastro de clientes">
+    </form>
+    <p>Olá Prime Faces</p>
 </body>
 </html>

@@ -9,10 +9,8 @@
         <!-- <properties>
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
         </properties> -->
-        <!-- <class>com.example.domain.jpa.ClienteJpa</class>
-        <class>com.example.domain.jpa.ProdutoJpa</class>
-        <class>com.example.domain.jpa.VendaJpa</class>
-        <class>com.example.domain.jpa.ProdutoQuantidadeJpa</class> -->
+        <class>com.example.domain.Cliente</class>
+        
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
