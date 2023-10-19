@@ -60,6 +60,13 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version> <!-- Use a versão adequada ao seu projeto -->
+    </dependency>
+
+
   </dependencies>
 
   <repositories>

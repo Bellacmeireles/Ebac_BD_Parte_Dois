@@ -42,7 +42,8 @@ public class ClienteController implements Serializable {
 		}
 	}
 	
-	/* public void cancel() {
+	
+	 public void cancel() {
 		try {
 			this.isUpdate = false;
 			this.cliente = new Cliente();
@@ -109,7 +110,7 @@ public class ClienteController implements Serializable {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar atualizar o cliente"));
 		}
         
-    } */
+    } 
 	
 	public String voltarTelaInicial() {
 		return "/index.jsp"; 
