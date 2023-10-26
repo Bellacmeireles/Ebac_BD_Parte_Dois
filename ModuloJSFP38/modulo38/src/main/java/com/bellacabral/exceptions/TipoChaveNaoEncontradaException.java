@@ -1,8 +1,13 @@
 package com.bellacabral.exceptions;
 
-public class TipoChaveNaoEncontradaException extends Exception {
+public class TipoChaveNaoEncontradaException extends RuntimeException {
 
-    public TipoChaveNaoEncontradaException(String msg) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1385381057926663213L;
+
+	public TipoChaveNaoEncontradaException(String msg) {
         this(msg, null);
     }
 

@@ -37,10 +37,11 @@ public class ClienteConverter implements Converter {
 	    @SuppressWarnings({ "unchecked", "rawtypes" })
 	    Map<String, Object> idMap = (Map) viewMap.get(key);
 	    if (idMap == null) {
-	        idMap = new HashMap<String, Object>();
+	        idMap = new HashMap<>();
 	        viewMap.put(key, idMap);
 	    }
 	    return idMap;
 	}
+
     
 }

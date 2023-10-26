@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.bellacabral.domain.Cliente;
 import com.bellacabral.exceptions.DAOException;
-import com.bellacabral.services.generic.IGenericService;
+import com.bellacabral.service.generic.IGenericService;
 
 public interface IClienteService extends IGenericService<Cliente, Long> {
 

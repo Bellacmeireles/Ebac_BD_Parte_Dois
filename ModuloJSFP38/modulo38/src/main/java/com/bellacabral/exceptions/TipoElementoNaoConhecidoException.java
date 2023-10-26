@@ -1,6 +1,11 @@
 package com.bellacabral.exceptions;
 
-public class TipoElementoNaoConhecidoException extends Exception {
+public class TipoElementoNaoConhecidoException extends RuntimeException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8612150993809494373L;
+
 	public TipoElementoNaoConhecidoException(String msg) {
         this(msg, null);
     }

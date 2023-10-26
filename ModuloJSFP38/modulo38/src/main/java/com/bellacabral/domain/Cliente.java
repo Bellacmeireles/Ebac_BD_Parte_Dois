@@ -11,10 +11,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TB_CLIENTE")
-@NamedQuery(name = "Cliente.findByNome", query = "SELECT c FROM Cliente c WHERE c.nome LIKE :nome")
-public class Cliente implements Persistente{
-
-    @Id
+@NamedQuery(name = "Cliente.findByNome", query = "SELECT c FROM Cliente c WHERE c.nome LIKE :nome") 
+public class Cliente implements Persistente {
+	
+	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cliente_seq")
 	@SequenceGenerator(name="cliente_seq", sequenceName="sq_cliente", initialValue = 1, allocationSize = 1)
 	private Long id;
@@ -42,9 +42,8 @@ public class Cliente implements Persistente{
     
 	@Column(name = "ESTADO", nullable = false, length = 50)
     private String estado;
-
-
-    public String getNome() {
+    
+	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
@@ -92,12 +91,12 @@ public class Cliente implements Persistente{
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
     
 }

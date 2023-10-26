@@ -9,7 +9,7 @@ import com.bellacabral.domain.Cliente;
 import com.bellacabral.exceptions.DAOException;
 import com.bellacabral.exceptions.MaisDeUmRegistroException;
 import com.bellacabral.exceptions.TableException;
-import com.bellacabral.services.generic.GenericService;
+import com.bellacabral.service.generic.GenericService;
 
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
 

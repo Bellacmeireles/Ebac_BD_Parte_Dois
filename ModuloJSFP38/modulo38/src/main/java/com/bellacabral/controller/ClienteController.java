@@ -18,7 +18,9 @@ import com.bellacabral.utils.ReplaceUtils;
 @ViewScoped
 public class ClienteController implements Serializable {
 
-    private Cliente cliente;
+	private static final long serialVersionUID = 8030245985235567808L;
+	
+	private Cliente cliente;
 	
 	private Collection<Cliente> clientes;
 	
@@ -42,8 +44,7 @@ public class ClienteController implements Serializable {
 		}
 	}
 	
-	
-	 public void cancel() {
+	public void cancel() {
 		try {
 			this.isUpdate = false;
 			this.cliente = new Cliente();
@@ -110,17 +111,12 @@ public class ClienteController implements Serializable {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar atualizar o cliente"));
 		}
         
-    } 
+    }
 	
 	public String voltarTelaInicial() {
-		return "/index.jsp"; 
-	}
-
-    //do professor
-	/* public String voltarTelaInicial() {
 		return "/index.xhtml"; 
 	}
- */
+
 	public Cliente getCliente() {
 		return cliente;
 	}

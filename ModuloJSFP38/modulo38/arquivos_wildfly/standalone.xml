@@ -139,9 +139,7 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:/PostGreDS" pool-name="PostgrePool">
-                    <connection-url>jdbc:postgresql://localhost:15432/mod_36</connection-url> <!--
-                    mudar o nome para o meu banco de dados -->
-                    <driver>postgres</driver>
+                    <connection-url>jdbc:postgresql://localhost:15432/mod_test_38</connection-url>                     <driver>postgres</driver>
                     <security>
                         <user-name>postgres</user-name>
                         <password>5678</password> <!-- senha usada pelo professor " admin " -->

@@ -8,18 +8,17 @@ import com.bellacabral.dao.generic.GenericDAO;
 import com.bellacabral.domain.Cliente;
 
 public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO {
-    
-    public ClienteDAO() {
+
+	public ClienteDAO() {
 		super(Cliente.class);
 	}
 
-    @Override
+	@Override
 	public List<Cliente> filtrarClientes(String query) {
-		TypedQuery<Cliente> tpQuery = 
-				this.entityManager.createNamedQuery("Cliente.findByNome", this.persistenteClass);
+		TypedQuery<Cliente> tpQuery = this.entityManager.createNamedQuery("Cliente.findByNome", this.persistenteClass);
 		tpQuery.setParameter("nome", "%" + query + "%");
-        return tpQuery.getResultList();
-		
+		return tpQuery.getResultList();
+
 	}
-    
+
 }
