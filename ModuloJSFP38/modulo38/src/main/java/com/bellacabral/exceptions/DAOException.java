@@ -8,5 +8,5 @@ public class DAOException extends RuntimeException {
 
 	public DAOException(String msg, Exception ex) {
 		super(msg, ex);
-    }
+	}
 }

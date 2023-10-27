@@ -8,8 +8,8 @@ import com.bellacabral.service.generic.IGenericService;
 
 public interface IClienteService extends IGenericService<Cliente, Long> {
 
-    Cliente buscarPorCPF(Long cpf) throws DAOException;
+	Cliente buscarPorCPF(Long cpf) throws DAOException;
 
 	List<Cliente> filtrarClientes(String query);
-    
+
 }

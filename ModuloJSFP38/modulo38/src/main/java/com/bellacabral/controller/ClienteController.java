@@ -19,31 +19,32 @@ import com.bellacabral.utils.ReplaceUtils;
 public class ClienteController implements Serializable {
 
 	private static final long serialVersionUID = 8030245985235567808L;
-	
+
 	private Cliente cliente;
-	
+
 	private Collection<Cliente> clientes;
-	
+
 	@Inject
 	private IClienteService clienteService;
-	
+
 	private Boolean isUpdate;
-	
+
 	private String cpfMask;
-	
+
 	private String telMask;
-	
+
 	@PostConstruct
-    public void init() {
+	public void init() {
 		try {
 			this.isUpdate = false;
 			this.cliente = new Cliente();
 			this.clientes = clienteService.buscarTodos();
 		} catch (Exception e) {
-			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar listar os clientes"));
+			FacesContext.getCurrentInstance().addMessage("growl",
+					new FacesMessage("Erro ao tentar listar os clientes"));
 		}
 	}
-	
+
 	public void cancel() {
 		try {
 			this.isUpdate = false;
@@ -51,9 +52,9 @@ public class ClienteController implements Serializable {
 		} catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar cancelar ação"));
 		}
-		
-    } 
-	
+
+	}
+
 	public void edit(Cliente cliente) {
 		try {
 			this.isUpdate = true;
@@ -61,9 +62,9 @@ public class ClienteController implements Serializable {
 		} catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar excluir o cliente"));
 		}
-		
-    } 
-	
+
+	}
+
 	public void delete(Cliente cliente) {
 		try {
 			clienteService.excluir(cliente);
@@ -71,9 +72,9 @@ public class ClienteController implements Serializable {
 		} catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar excluir o cliente"));
 		}
-		
-    } 
-	
+
+	}
+
 	public void add() {
 		try {
 			removerCaracteresInvalidos();
@@ -84,37 +85,37 @@ public class ClienteController implements Serializable {
 		} catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar criar o cliente"));
 		}
-		
-        
-    }
 
-    private void removerCaracteresInvalidos() {
-    	Long cpf = Long.valueOf(ReplaceUtils.replace(getCpfMask(), ".", "-"));
-    	this.cliente.setCpf(cpf);
-    	
-    	Long tel = Long.valueOf(ReplaceUtils.replace(getTelMask(), "(", ")", " ", "-"));
-    	this.cliente.setTel(tel);
 	}
-    
-    private void limparCampos() {
-    	setCpfMask(null);
-    	setTelMask(null);
-    }
+
+	private void removerCaracteresInvalidos() {
+		Long cpf = Long.valueOf(ReplaceUtils.replace(getCpfMask(), ".", "-"));
+		this.cliente.setCpf(cpf);
+
+		Long tel = Long.valueOf(ReplaceUtils.replace(getTelMask(), "(", ")", " ", "-"));
+		this.cliente.setTel(tel);
+	}
+
+	private void limparCampos() {
+		setCpfMask(null);
+		setTelMask(null);
+	}
 
 	public void update() {
-    	try {
-    		removerCaracteresInvalidos();
+		try {
+			removerCaracteresInvalidos();
 			clienteService.alterar(this.cliente);
 			cancel();
 			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Cliente Atualiado com sucesso"));
 		} catch (Exception e) {
-			FacesContext.getCurrentInstance().addMessage("growl", new FacesMessage("Erro ao tentar atualizar o cliente"));
+			FacesContext.getCurrentInstance().addMessage("growl",
+					new FacesMessage("Erro ao tentar atualizar o cliente"));
 		}
-        
-    }
-	
+
+	}
+
 	public String voltarTelaInicial() {
-		return "/index.xhtml"; 
+		return "/index.xhtml";
 	}
 
 	public Cliente getCliente() {
@@ -157,5 +158,4 @@ public class ClienteController implements Serializable {
 		this.telMask = telMask;
 	}
 
-    
 }

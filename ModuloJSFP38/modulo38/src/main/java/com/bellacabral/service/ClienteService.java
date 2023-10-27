@@ -13,8 +13,8 @@ import com.bellacabral.service.generic.GenericService;
 
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
 
-    private IClienteDAO clienteDAO;
-	
+	private IClienteDAO clienteDAO;
+
 	@Inject
 	public ClienteService(IClienteDAO clienteDAO) {
 		super(clienteDAO);
@@ -36,5 +36,4 @@ public class ClienteService extends GenericService<Cliente, Long> implements ICl
 		return clienteDAO.filtrarClientes(query);
 	}
 
-    
 }

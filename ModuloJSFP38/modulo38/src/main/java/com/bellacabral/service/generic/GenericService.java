@@ -10,14 +10,13 @@ import com.bellacabral.exceptions.MaisDeUmRegistroException;
 import com.bellacabral.exceptions.TableException;
 import com.bellacabral.exceptions.TipoChaveNaoEncontradaException;
 
-public abstract class GenericService <T extends Persistente, E extends Serializable> implements IGenericService<T, E> {
+public abstract class GenericService<T extends Persistente, E extends Serializable> implements IGenericService<T, E> {
 
-    protected IGenericDAO<T, E> dao;
-	
+	protected IGenericDAO<T, E> dao;
+
 	public GenericService(IGenericDAO<T, E> dao) {
 		this.dao = dao;
 	}
-	
 
 	@Override
 	public T cadastrar(T entity) throws TipoChaveNaoEncontradaException, DAOException {
@@ -43,5 +42,5 @@ public abstract class GenericService <T extends Persistente, E extends Serializa
 	public Collection<T> buscarTodos() throws DAOException {
 		return this.dao.buscarTodos();
 	}
-    
+
 }

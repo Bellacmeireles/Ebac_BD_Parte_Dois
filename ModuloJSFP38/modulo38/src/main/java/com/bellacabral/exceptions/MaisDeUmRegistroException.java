@@ -8,5 +8,5 @@ public class MaisDeUmRegistroException extends RuntimeException {
 
 	public MaisDeUmRegistroException(String msg) {
 		super(msg);
-    }
+	}
 }
