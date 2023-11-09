@@ -1,0 +1,11 @@
+package com.bellacabral.service;
+
+public interface IVendaService {
+	
+public void finalizarVenda(Venda venda);
+	
+	public void cancelarVenda(Venda venda);
+
+	public Venda consultarComCollection(Long id);
+
+}

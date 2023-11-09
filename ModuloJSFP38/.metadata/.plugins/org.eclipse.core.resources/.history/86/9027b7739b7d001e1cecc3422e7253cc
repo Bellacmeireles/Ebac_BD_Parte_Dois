@@ -1,0 +1,9 @@
+package com.bellacabral.dao;
+
+import com.bellacabral.dao.generic.IGenericDAO;
+
+public interface IProdutoDAO extends IGenericDAO<Produto, String> {
+
+	List<Produto> filtrarProdutos(String query);
+
+}

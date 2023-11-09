@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="javax.persistence.SequenceGenerator"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="com.bellacabral.domain.Persistente"/>
+    <fullyQualifiedTypeName name="javax.faces.convert.Converter"/>
+    <fullyQualifiedTypeName name="com.bellacabral.dao.generic.GenericDAO"/>
+    <fullyQualifiedTypeName name="com.bellacabral.domain.Cliente"/>
+    <fullyQualifiedTypeName name="com.bellacabral.exceptions.TipoChaveNaoEncontradaException"/>
+    <fullyQualifiedTypeName name="com.bellacabral.exceptions.DAOException"/>
+    <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.criteria.Root"/>
+    <fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder"/>
+    <fullyQualifiedTypeName name="com.bellacabral.service.generic.IGenericService"/>
+    <fullyQualifiedTypeName name="com.bellacabral.domain.Produto"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bellacabral.dao.generic.IGenericDAO"/>
+    <fullyQualifiedTypeName name="com.bellacabral.domain.Venda"/>
+    <fullyQualifiedTypeName name="com.bellacabral.domain.Venda.Status"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
+    <fullyQualifiedTypeName name="javax.inject.Named"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package com.bellacabral.dao;
+
+import com.bellacabral.dao.generic.GenericDAO;
+import com.bellacabral.domain.Venda;
+
+public class VendaDAO extends GenericDAO<Venda, Long> implements IVendaDAO {
+
+}

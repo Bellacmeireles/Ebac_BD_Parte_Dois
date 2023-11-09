@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/modulo38/src/main/webapp/WEB-INF/web.xml">
+ <TreeFormPage>
+  <Memento type="FileWebApp25">
+   <Memento collapsed="false" type="Web Descriptor 2.5"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="WebAppFolderServices">
+   <Memento collapsed="false" type="Services"/>
+  </Memento>
+  <Memento type="WebAppFolderResources">
+   <Memento collapsed="false" type="Resource Env Refs"/>
+   <Memento collapsed="false" type="Resource Refs"/>
+  </Memento>
+  <Memento type="WebAppFolderMessageDestinations">
+   <Memento collapsed="false" type="Message Destination Ref List"/>
+   <Memento collapsed="false" type="Message Destination List"/>
+  </Memento>
+  <Memento type="WebAppLocaleEncodingMappingList">
+   <Memento collapsed="false" type="Locale Encoding Mappings"/>
+  </Memento>
+  <Memento type="WebAppFolderPersistence25">
+   <Memento collapsed="false" type="Persistence"/>
+  </Memento>
+  <Memento type="WebAppFolderLifecycles25">
+   <Memento collapsed="false" type="Lifecycle Callbacks"/>
+  </Memento>
+  <Memento type="WebAppJspConfig">
+   <Memento collapsed="false" type="Taglibs"/>
+   <Memento collapsed="false" type="Property Groups"/>
+  </Memento>
+  <Memento type="WebAppFolderServlets">
+   <Memento collapsed="false" type="Servlets"/>
+   <Memento collapsed="false" type="Servlet Mappings"/>
+  </Memento>
+  <Memento type="WebAppFolderListeners24">
+   <Memento collapsed="false" type="Listeners"/>
+  </Memento>
+  <Memento type="WebAppFolderFilters24">
+   <Memento collapsed="false" type="Filters"/>
+   <Memento collapsed="false" type="Filter Mappings"/>
+  </Memento>
+  <Memento type="FileWebApp30">
+   <Memento collapsed="false" type="Deployment Descriptor"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="">
+   <Memento type="Properties Editor"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

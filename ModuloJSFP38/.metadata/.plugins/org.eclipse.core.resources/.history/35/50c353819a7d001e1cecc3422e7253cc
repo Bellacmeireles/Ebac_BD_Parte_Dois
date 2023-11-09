@@ -1,0 +1,16 @@
+package com.bellacabral.converter;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+import javax.inject.Named;
+
+@Named
+@FacesConverter(value = "produtoConverter", forClass = Produto.class)
+public class ProdutoConverter implements Converter {
+
+}

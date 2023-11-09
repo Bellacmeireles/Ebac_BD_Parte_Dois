@@ -1,0 +1,7 @@
+package com.bellacabral.controller;
+
+@Named
+@ViewScoped
+public class ProdutoController {
+
+}

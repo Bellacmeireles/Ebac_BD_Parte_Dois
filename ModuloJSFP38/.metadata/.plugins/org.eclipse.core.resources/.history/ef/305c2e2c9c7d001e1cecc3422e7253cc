@@ -1,0 +1,5 @@
+package com.bellacabral.dao;
+
+public class VendaDAO extends GenericDAO<Venda, Long> implements IVendaDAO {
+
+}

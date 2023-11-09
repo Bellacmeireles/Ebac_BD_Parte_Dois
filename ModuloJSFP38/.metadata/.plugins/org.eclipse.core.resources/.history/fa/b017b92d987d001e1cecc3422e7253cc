@@ -1,0 +1,12 @@
+package com.bellacabral.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "TB_PRODUTO")
+@NamedQuery(name = "Produto.findByNome", query = "SELECT c FROM Produto c WHERE c.nome LIKE :nome") 
+public class Produto {
+
+}

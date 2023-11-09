@@ -1,0 +1,181 @@
+Quando inicia o server:
+17:37:39,795 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+17:37:40,342 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+17:37:40,355 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+17:37:40,500 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 23.0.2.Final (WildFly Core 15.0.1.Final) starting
+17:37:41,363 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.15.3.Final
+17:37:41,673 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 20) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+17:37:41,959 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+17:37:41,982 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 4) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+17:37:41,996 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment modulo38-1.0-SNAPSHOT.war
+17:37:42,009 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found modulo38-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called modulo38-1.0-SNAPSHOT.war.dodeploy
+17:37:42,075 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+17:37:42,106 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.4.Final
+17:37:42,115 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.4.Final
+17:37:42,184 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+17:37:42,199 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 64) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+17:37:42,200 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+17:37:42,201 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+17:37:42,202 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0001: Activating Infinispan subsystem.
+17:37:42,195 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 63) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+17:37:42,207 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 55) WFLYRS0016: RESTEasy version 3.15.1.Final
+17:37:42,214 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 60) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+17:37:42,219 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 52) WFLYHEALTH0001: Activating Base Health Subsystem
+17:37:42,224 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+17:37:42,233 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+17:37:42,252 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Base Metrics Subsystem
+17:37:42,253 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+17:37:42,291 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.4.27.Final)
+17:37:42,306 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.5.Final starting
+17:37:42,390 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+17:37:42,427 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+17:37:42,428 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+17:37:42,429 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+17:37:42,448 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+17:37:42,452 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = postgres
+17:37:42,579 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file 'C:\Users\bella\dev\server\wildfly-23.0.2.Final\wildfly-23.0.2.Final - Alunos\standalone\configuration\application.keystore' does not exist. Used blank.
+17:37:42,612 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'C:\Users\bella\dev\server\wildfly-23.0.2.Final\wildfly-23.0.2.Final - Alunos/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+17:37:42,657 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 54) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+17:37:42,681 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore C:\Users\bella\dev\server\wildfly-23.0.2.Final\wildfly-23.0.2.Final - Alunos\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.wildfly.extension.elytron.SSLDefinitions (jar:file:/C:/Users/bella/dev/server/wildfly-23.0.2.Final/wildfly-23.0.2.Final%20-%20Alunos/modules/system/layers/base/org/wildfly/extension/elytron/main/wildfly-elytron-integration-15.0.1.Final.jar!/) to method com.sun.net.ssl.internal.ssl.Provider.isFIPS()
+WARNING: Please consider reporting this to the maintainers of org.wildfly.extension.elytron.SSLDefinitions
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+17:37:42,758 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+17:37:42,758 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+17:37:42,820 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.20.Final
+17:37:42,826 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+17:37:42,827 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+17:37:42,838 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+17:37:42,960 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+17:37:43,124 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+17:37:43,174 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+17:37:43,197 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore C:\Users\bella\dev\server\wildfly-23.0.2.Final\wildfly-23.0.2.Final - Alunos\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+17:37:43,222 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\bella\dev\server\wildfly-23.0.2.Final\wildfly-23.0.2.Final - Alunos\standalone\deployments
+17:37:43,242 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "modulo38-1.0-SNAPSHOT.war" (runtime-name: "modulo38-1.0-SNAPSHOT.war")
+17:37:43,258 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/PostGreDS]
+17:37:43,258 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+17:37:43,274 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+17:37:43,361 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.3.Final (Apache CXF 3.3.10) 
+17:37:44,281 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment modulo38-1.0-SNAPSHOT.war
+17:37:44,394 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 6.0.22.Final
+17:37:44,896 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+17:37:45,229 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+17:37:45,259 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.1.6 (Final)
+17:37:45,350 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = modulo38-1.0-SNAPSHOT.war_org.postgresql.Driver_42_6
+17:37:45,371 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.9.Final
+17:37:45,426 INFO  [org.infinispan.CONFIG] (MSC service thread 1-7) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+17:37:45,427 INFO  [org.infinispan.CONFIG] (MSC service thread 1-7) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+17:37:45,539 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+17:37:45,671 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-6) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+17:37:45,824 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+17:37:45,843 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: org.jboss.msc.service.StartException in service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1731)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: WFLYWELD0037: Error injecting persistence unit into Jakarta Contexts and Dependency Injection managed bean. Can't find a persistence unit named '' in deployment modulo38-1.0-SNAPSHOT.war for injection point protected javax.persistence.EntityManager com.bellacabral.dao.generic.GenericDAO.entityManager
+	at org.jboss.as.weld.jpa@23.0.2.Final//org.jboss.as.weld.services.bootstrap.WeldJpaInjectionServices.getScopedPUName(WeldJpaInjectionServices.java:105)
+	at org.jboss.as.weld.jpa@23.0.2.Final//org.jboss.as.weld.services.bootstrap.WeldJpaInjectionServices.registerPersistenceContextInjectionPoint(WeldJpaInjectionServices.java:68)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory$PersistenceContextResourceInjectionProcessor.getResourceReferenceFactory(ResourceInjectionFactory.java:174)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory$PersistenceContextResourceInjectionProcessor.getResourceReferenceFactory(ResourceInjectionFactory.java:162)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createFieldResourceInjection(ResourceInjectionProcessor.java:104)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createResourceInjections(ResourceInjectionProcessor.java:141)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createResourceInjections(ResourceInjectionProcessor.java:94)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory.discoverType(ResourceInjectionFactory.java:272)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory.getResourceInjections(ResourceInjectionFactory.java:81)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.ResourceInjector.<init>(ResourceInjector.java:59)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.ResourceInjector.of(ResourceInjector.java:48)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.BeanInjectionTarget.<init>(BeanInjectionTarget.java:63)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.BeanInjectionTarget.createDefault(BeanInjectionTarget.java:47)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.manager.InjectionTargetFactoryImpl.chooseInjectionTarget(InjectionTargetFactoryImpl.java:139)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.manager.InjectionTargetFactoryImpl.createInjectionTarget(InjectionTargetFactoryImpl.java:88)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bean.ManagedBean.<init>(ManagedBean.java:102)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bean.ManagedBean.of(ManagedBean.java:82)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.AbstractBeanDeployer.createManagedBean(AbstractBeanDeployer.java:280)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.BeanDeployer.createClassBean(BeanDeployer.java:221)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.ConcurrentBeanDeployer$2.doWork(ConcurrentBeanDeployer.java:68)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.ConcurrentBeanDeployer$2.doWork(ConcurrentBeanDeployer.java:65)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:62)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:55)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+
+17:37:45,896 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "modulo38-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"modulo38-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: java.lang.IllegalArgumentException: WFLYWELD0037: Error injecting persistence unit into Jakarta Contexts and Dependency Injection managed bean. Can't find a persistence unit named '' in deployment modulo38-1.0-SNAPSHOT.war for injection point protected javax.persistence.EntityManager com.bellacabral.dao.generic.GenericDAO.entityManager"}}
+17:37:45,956 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "modulo38-1.0-SNAPSHOT.war" (runtime-name : "modulo38-1.0-SNAPSHOT.war")
+17:37:45,958 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+WFLYCTL0448: 35 additional services are down due to their dependencies being missing or failed
+17:37:46,001 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+17:37:46,010 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 23.0.2.Final (WildFly Core 15.0.1.Final) started (with errors) in 6717ms - Started 468 of 708 services (39 services failed or missing dependencies, 350 services are lazy, passive or on-demand)
+17:37:46,014 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+17:37:46,015 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+
+
+
+
+
+quando restarta o .war:
+
+
+17:38:31,152 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = modulo38-1.0-SNAPSHOT.war_org.postgresql.Driver_42_6
+17:38:31,200 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment modulo38-1.0-SNAPSHOT.war (runtime-name: modulo38-1.0-SNAPSHOT.war) in 53ms
+17:38:31,203 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "modulo38-1.0-SNAPSHOT.war" (runtime-name: "modulo38-1.0-SNAPSHOT.war")
+17:38:31,620 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment modulo38-1.0-SNAPSHOT.war
+17:38:31,689 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+17:38:31,805 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+17:38:31,834 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = modulo38-1.0-SNAPSHOT.war_org.postgresql.Driver_42_6
+17:38:31,871 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+17:38:31,907 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: org.jboss.msc.service.StartException in service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1731)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: WFLYWELD0037: Error injecting persistence unit into Jakarta Contexts and Dependency Injection managed bean. Can't find a persistence unit named '' in deployment modulo38-1.0-SNAPSHOT.war for injection point protected javax.persistence.EntityManager com.bellacabral.dao.generic.GenericDAO.entityManager
+	at org.jboss.as.weld.jpa@23.0.2.Final//org.jboss.as.weld.services.bootstrap.WeldJpaInjectionServices.getScopedPUName(WeldJpaInjectionServices.java:105)
+	at org.jboss.as.weld.jpa@23.0.2.Final//org.jboss.as.weld.services.bootstrap.WeldJpaInjectionServices.registerPersistenceContextInjectionPoint(WeldJpaInjectionServices.java:68)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory$PersistenceContextResourceInjectionProcessor.getResourceReferenceFactory(ResourceInjectionFactory.java:174)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory$PersistenceContextResourceInjectionProcessor.getResourceReferenceFactory(ResourceInjectionFactory.java:162)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createFieldResourceInjection(ResourceInjectionProcessor.java:104)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createResourceInjections(ResourceInjectionProcessor.java:141)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionProcessor.createResourceInjections(ResourceInjectionProcessor.java:94)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory.discoverType(ResourceInjectionFactory.java:272)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.ResourceInjectionFactory.getResourceInjections(ResourceInjectionFactory.java:81)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.ResourceInjector.<init>(ResourceInjector.java:59)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.ResourceInjector.of(ResourceInjector.java:48)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.BeanInjectionTarget.<init>(BeanInjectionTarget.java:63)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.injection.producer.BeanInjectionTarget.createDefault(BeanInjectionTarget.java:47)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.manager.InjectionTargetFactoryImpl.chooseInjectionTarget(InjectionTargetFactoryImpl.java:139)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.manager.InjectionTargetFactoryImpl.createInjectionTarget(InjectionTargetFactoryImpl.java:88)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bean.ManagedBean.<init>(ManagedBean.java:102)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bean.ManagedBean.of(ManagedBean.java:82)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.AbstractBeanDeployer.createManagedBean(AbstractBeanDeployer.java:280)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.BeanDeployer.createClassBean(BeanDeployer.java:221)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.ConcurrentBeanDeployer$2.doWork(ConcurrentBeanDeployer.java:68)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.bootstrap.ConcurrentBeanDeployer$2.doWork(ConcurrentBeanDeployer.java:65)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:62)
+	at org.jboss.weld.core@3.1.6.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:55)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+
+17:38:31,908 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"modulo38-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: java.lang.IllegalArgumentException: WFLYWELD0037: Error injecting persistence unit into Jakarta Contexts and Dependency Injection managed bean. Can't find a persistence unit named '' in deployment modulo38-1.0-SNAPSHOT.war for injection point protected javax.persistence.EntityManager com.bellacabral.dao.generic.GenericDAO.entityManager"}}
+17:38:31,941 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "modulo38-1.0-SNAPSHOT.war" with deployment "modulo38-1.0-SNAPSHOT.war"
+17:38:31,954 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."modulo38-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+
+

@@ -1,0 +1,11 @@
+package com.bellacabral.dao;
+
+public interface IVendaDAO {
+
+	void finalizarVenda(Venda venda);
+
+	void cancelarVenda(Venda venda);
+
+	Venda consultarComCollection(Long id);
+
+}
