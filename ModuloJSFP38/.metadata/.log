@@ -1589,3 +1589,251 @@ Caused by: java.util.concurrent.CancellationException
 
 !ENTRY org.eclipse.core.resources 2 10035 2023-11-07 17:06:22.958
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2023-11-09 13:35:56.748 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-09 13:36:49.206
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-09 13:36:49.593
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-11-09 13:37:18.908
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-09 13:37:19.754
+!MESSAGE Logback config file: C:\Users\bella\OneDrive\Documentos\Ebac BD parte dois\ModuloJSFP38\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-09 13:37:23.112
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-09 13:37:23.112
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2023-11-09 13:37:29.450
+!MESSAGE Invalid preference category path: org.jboss.tools.vpe.editor (bundle: org.jboss.tools.jst.web.ui, page: org.jboss.tools.jsf.ui.editor.pref.template)
+
+!ENTRY org.eclipse.ui 2 2 2023-11-09 13:37:29.451
+!MESSAGE Invalid preference category path: org.jboss.tools.vpe.editor (bundle: org.jboss.tools.jst.web.ui, page: org.jboss.tools.jsf.ui.editor.pref.contentassist)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-11-09 13:37:29.510
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-17.0.5\bin\javaw.exe
+-cp
+C:\Users\bella\eclipse\java-2023-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.50.0.202310252332\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\bella\eclipse\java-2023-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.50.0.202310252332\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\bella\eclipse\java-2023-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.50.0.202310252332\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/bella/OneDrive/Documentos/Ebac BD parte dois/ModuloJSFP38/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1699547849509
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-09 13:37:29.511
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-11-09 13:37:29.523
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20980
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-09 13:37:31.512
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bella'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-09 13:37:34.230
+!MESSAGE Classpath changed for project: modulo38
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.949
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.951
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.952
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.953
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.954
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.955
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.956
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.957
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.961
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.962
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.963
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.964
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.966
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.967
+!MESSAGE Could not send ACTION event 'startQuteLS': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:35.968
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.043
+!MESSAGE Could not send ACTION event 'startLS': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.064
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.073
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.076
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.077
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.081
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.084
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.085
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.088
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.091
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.155
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.157
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.163
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.165
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.170
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.171
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.175
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.178
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.179
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.181
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.182
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.185
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.187
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.190
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.192
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.194
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.198
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.200
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.212
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.220
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.225
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.229
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.231
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.235
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.237
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.239
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.241
+!MESSAGE Could not send USER event 'Anonymous ID: 4dfcc460-984d-480f-800f-f2844288e1dc': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.243
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2023-11-09 13:37:36.245
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-09 13:37:49.362
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-09 13:37:49.382
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
